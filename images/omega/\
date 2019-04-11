@@ -66,84 +66,7 @@
                             frameborder="no"></a>
                         </span>
                         </br>
-                        </br>
-                    </section>
-                    <section>
-                        <div id="left">
-                            <h3>$^{99}$Mo production</h3>
-                        <img height="300" src="./images/patent/patenttitle.png">
-                        </div>
-                        <div id="right">
-                        <img height="500" src="./images/patent/patentf3.png">
-                        </div>
-                        <font size="2">
-                        <a href="https://patents.google.com/patent/US20120027152A1/en">https://patents.google.com/patent/US20120027152A1/en</a>
-                        </font>
-                    </section>
-                    <section>
-                    <h5>About Me:</h5>
-                        <span>
-                            <a href="https://ne.oregonstate.edu/"
-                            class="image"><img
-                            height="120"
-                            src="./images/osu_seal.png"
-                            alt="Oregon State University"
-                            frameborder="no"></a>
-                        </span>
-                        </br>
                         <span class="fragment">
-                            <a href="http://berkeley.edu"
-                            class="image"><img
-                            height="120"
-                            src="http://www.berkeley.edu/brand/img/seals/ucbseal_139_540.png"
-                            alt="Nuclear Engineering, University of California, Berkeley"
-                            frameborder="no"></a>
-                            <a href="http://nuc.berkeley.edu"
-                            class="image"><img
-                            height="120"
-                            src="./images/ucbneutronics.png"
-                            alt="Nuclear Engineering, University of California, Berkeley"></a>
-                            <a href="https://www.ornl.gov/division/rnsd"
-                            class="image"><img
-                            height="120"
-                            src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Oak_Ridge_National_Laboratory_logo.svg"
-                            alt="Radiation Transport Group, Oak Ridge National Laboratory"></a>
-                            <a href="http://bids.berkeley.edu"
-                            class="image"><img
-                            height="100"
-                            src="http://bids.berkeley.edu/sites/all/themes/bids/logo.png"
-                            alt="BIDS Logo"></a>
-                        </span>
-                        </br>
-                    </section>
-                    <section data-background-image="./images/rover/NASA_cropped.png" data-background-size="40%" data-background-position="bottom left">
-                        <div>
-                            <img height="100" src="./images/rover/bgc_logo_big.gif">
-                            <img height="100" src="./images/rover/SUERC-logo.png">
-                        </div>
-                        <div>
-                            <img src="./images/rover/XSAr.jpg" height="300">
-                            <img src="./images/rover/ArAge.jpg" height="300">
-                        </div>
-                        <div id="bottom">
-                        <font size="2">
-                            <p align="right"><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/ggr.12170" style="color:black;"><i>Instrumentation Development for In Situ $^{40}$Ar/$^{39}$Ar Geochronology</i>, Morgan, L., Munk, M., et al; Geostandards and Geoanalytical Research 2017</a></p>
-                            <p align="right"><a href="http://munkm.github.io/papers/munk_mc15.pdf" style="color:black;"><i>Design and feasibility study of a compact neutron source for extraterrestrial geochronology applications</i>, Munk, M., Morgan, L., et. al; ANS M&C 2015</a></p>
-                        </font>
-                        </div>
-                    </section>
-                    <section>
-                    <h5>About Me:</h5>
-                        <span>
-                            <a href="https://ne.oregonstate.edu/"
-                            class="image"><img
-                            height="120"
-                            src="./images/osu_seal.png"
-                            alt="Oregon State University"
-                            frameborder="no"></a>
-                        </span>
-                        </br>
-                        <span>
                             <a href="http://berkeley.edu"
                             class="image"><img
                             height="120"
@@ -185,9 +108,6 @@
                             src="http://avatars1.githubusercontent.com/u/15057231?s=200&v=4"
                             alt="DXL Logo"></a>
                         </span>
-                    </section>
-                    <section>
-                        Widgyts
                     </section>
                     <section>
                         <h5>About Me:</h5>
@@ -306,7 +226,7 @@
                                 <li>"Analog" Monte Carlo methods for these problems is not ideal
                                     <ul>
                                         <li>Lots of particles <b>&#8594;</b> good statistics</li>
-                                        <li>Good shielding    <b>&#8594;</b> very few particles</li>
+                                        <li>Good shielding <b>&#8594;</b> very few particles</li>
                                     </ul>
                                 </li>
                             </ul>
@@ -325,14 +245,11 @@
                     </section>
                     <section>
                         <h3>Hybrid Methods</h3>
-                        <img src="./images/omega/MC_Det.svg" height="400">
                         <ul>
-                            <small>
                             <li>Deterministic solution used to create importance map</li>
                             <li>Importance map <b>&#8594;</b> Monte Carlo <b>&#8594;</b> Improves solution, reduces time</li>
                             <li>Importance: contribution to a tally</li>
                             <li>Common solution: use deterministic solution to adjoint equation for importance map.</li>
-                            </small>
                         </ul>
                     </section>
                     <section>
@@ -351,13 +268,13 @@
                         <p>The Adjoint Neutron Transport Equation</p>
                         \[
                         \begin{multline}
-                        \hat\Omega \cdot \nabla \color{teal}{\psi^{\dagger}}
+                        \hat\Omega \cdot \nabla \psi^{\dagger}
                                 (\vec {r} ,E,\:\hat\Omega)+\Sigma _{ t }
-                                (\vec{r},E)\color{teal}{\psi^{\dagger}}  (\vec { r } ,E,\:\hat\Omega)
+                                (\vec{r},E)\psi^{\dagger}  (\vec { r } ,E,\:\hat\Omega)
                                = \\
-                               \int _{ 4\pi  } \int _{ 0 }^{ \infty  } \Sigma _{ s }(\color{violet}{E\rightarrow E'},
-                               \color{purple}{\hat\Omega\rightarrow\hat\Omega'})\color{teal}{\psi^{\dagger}}  (\vec { r } ,E',\:
-                               \hat\Omega')dE' \:d\hat\Omega' + \color{teal}{q_{e}^\dagger}(\vec { r } ,E,
+                                \int _{ 4\pi  } \int _{ 0 }^{ \infty  } \Sigma _{ s }(E\rightarrow E',
+                                \hat\Omega\rightarrow\hat\Omega')\psi^{\dagger}  (\vec { r } ,E',\:
+                                \hat\Omega')dE' \:d\hat\Omega' + q_{e}^\dagger(\vec { r } ,E,
                                 \:\hat\Omega),
                         \end{multline}
                         \]
@@ -483,6 +400,11 @@
                             <li>Does not completely <font color="red">negate low-importance regions</font></li>
                             </font>
                         </ul>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        Widgyts
                     </section>
                 </section>
                 <section>
