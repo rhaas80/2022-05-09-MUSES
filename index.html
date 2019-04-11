@@ -145,12 +145,12 @@
                 </section>
                 <section>
                     <section>
-                        <h3>The PB-FHR MK-1 Design</h3>
+                        <img height="500" src="http://fhr.nuc.berkeley.edu/wp-content/uploads/2013/08/WebSideRight.png">
                     </section>
                     <section>
                         <h3>The PB-FHR MK-1 Design</h3>
                         <div id="right">
-                        <img height="500" src="./images/RC_90cut_Neutronics.svg">
+                        <img height="500" src="./images/PBFHR/RC_90cut_Neutronics.svg">
                         </div>
                         <div id="left">
                             <font size="6">
@@ -166,12 +166,54 @@
                     </section>
                     <section>
                         <h3>PB-FHR Central Reflector</h3>
-                        <img height="500" src="./images/RC_90cut_Neutronics.svg">
-                        <img height="500" src="./images/RC_90cut_Neutronics.svg">
-                        <img height="500" src="./images/RC_90cut_Neutronics.svg">
+                        <img height="500" src="./images/PBFHR/CentralReflector_Simple.svg">
+                        <img height="500" src="./images/PBFHR/CentralReflector_Simple_Cutout.svg">
+                        <img height="500" src="./images/PBFHR/RC_90cut_Neutronics.svg">
                     </section>
                     <section>
                         <h3>Central Reflector Lifetime Estimates</h3>
+                        <font size="6">
+                        <p class="fragment">Use MCNP to get the fluence data for the reflector</p>
+                        <p class="fragment"><b>&#8595;</b></p>
+                        <p class="fragment">Use fluence and experimental data to calculate radiation-induced strain</p>
+                        <p class="fragment"><b>&#8595;</b></p>
+                        <p class="fragment">Use strain calculation to impose a pseudo-temperature distribution in FEM</p>
+                        <p class="fragment"><b>&#8595;</b></p>
+                        <p class="fragment">Use FEM and fluence buildup to determine lifetime</p>
+                        </font>
+                    </section>
+                    <section>
+                        <h3>Implementing Radiation-Induced Swelling</h3>
+                        \[
+                        \begin{align}
+                        \epsilon_{inel} &= \alpha (T-T_{reference}) \\
+                        \epsilon_{inel} &= \epsilon_{radiation swelling} \\
+                        T &= \frac{\epsilon_{rad swelling}}{\alpha} + T_{reference}
+                        \end{align}
+                        \]
+                    </section>
+                    <section>
+                        <h3>Central Reflector Lifetime Estimates</h3>
+                        <img height="500" src="./images/PBFHR/StressMises.gif">
+                    </section>
+                    <section>
+                        <h3>PB-FHR Central Reflector</h3>
+                        <ul>
+                        <img height="500" src="./images/PBFHR/CentralReflector_Simple_Cutout.svg">
+                        <b>&#8594;</b>
+                        <img height="500" src="./images/PBFHR/CentralReflector_solid_detail.svg">
+                        <img height="500" src="./images/PBFHR/CentralReflector_explode_detail.svg">
+                        <img height="150" src="./images/PBFHR/CentralReflector_single_detail.svg">
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Key Takeaways from the Lifetime Estimate</h3>
+                        <ul><font size="6">
+                            <li>Monolithic central reflector has <font color="red">prohibitively short lifetime</font> of 8 months</li>
+                            <li>The method is <font color="red">limited in scope</font> (it doesn't incorporate buoyant load or creep effects)</li>
+                            <li>Coupling neutronics/structural mechanics provides <font color="green">design insight</font> worth incorporating</li>
+                            </font>
+                        </ul>
                     </section>
                 </section>
                 <section>
