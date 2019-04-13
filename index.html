@@ -347,8 +347,8 @@
                         <img class="fragment" style="position:absolute; left:9.66%" height="600" src="./images/general/System1_longb.svg">
                     </section>
                     <section>
-                        <h3>Why hybrid methods?</h3>
-                        <ul>
+                        <h3>Why Variance Reduction?</h3>
+                        <div id="left">
                             <font size="6">
                             <ul class="fragment">
                                 <li>Radiation shielding is important</li>
@@ -359,40 +359,40 @@
                                     </ul>
                                 </li>
                             </ul>
-                            <ul class="fragment">
-                                <li>Hybrid methods leverage deterministic methods to reduce the time to convergence for Monte Carlo simulations</li>
-                            </ul>
-                            <ul class="fragment">
-                                <li>A number of shielding problems have strong angular anisotropies</li>
-                                <ul>
-                                    <li>The importance of a particle varies with direction</li>
-                                    <li>Tracking in a low importance direction is inefficient</li>
-                                </ul>
-                            </ul>
                             </font>
-                        </ul>
+                        </div>
+                        <div id="right">
+                            <img src="./images/omega/ww-mcnp.svg" height="300" class="fragment">
+                        </div>
                     </section>
                     <section>
                         <h3>hybrid methods</h3>
                         <img src="./images/omega/mc_det.svg" height="400">
                         <ul>
                             <small>
-                            <li>deterministic solution used to create importance map</li>
-                            <li>importance map <b>&#8594;</b> monte carlo <b>&#8594;</b> improves solution, reduces time</li>
-                            <li>importance: contribution to a tally</li>
-                            <li>common solution: use deterministic solution to adjoint equation for importance map.</li>
+                            <li>Deterministic solution used to create importance map</li>
+                            <li>Importance map <b>&#8594;</b> Monte Carlo <b>&#8594;</b> improves solution, reduces time</li>
+                            <li>Importance: contribution to a tally</li>
+                            <li>Common solution: use deterministic solution to adjoint equation for importance map.</li>
                             </small>
                         </ul>
                     </section>
                     <section>
-                        <img src="./images/omega/forward_problem.svg" height="600">
+                        <div id="left" class="fragment" align="center">
+                        <img src="./images/omega/forward_problem.svg" height="450">
+                        <font size=6 align="center">The forward problem</font>
+                        </div>
+                        <div id="right" class="fragment" align="center">
+                        <img src="./images/omega/adjoint_problem.svg" height="450">
+                        <font size=6 align="center">The adjoint problem</font>
+                        </div>
                     </section>
                     <section>
                         <img src="./images/omega/adjoint_problem.svg" height="600">
                     </section>
                     <section>
                         <small>
-                        <p>The Forward Neutron Transport Equation</p>
+                        <p>The Forward Neutron Transport Equationi:</p>
                         \[
                         \begin{multline}
                         \hat\Omega \cdot \nabla \psi
@@ -400,10 +400,10 @@
                                 (\vec{r},E)\psi (\vec { r } ,E,\:\hat\Omega) = \\
                                 \int _{ 4\pi  } \int _{ 0 }^{ \infty  } \Sigma _{ s }(E'\rightarrow E,
                                 \hat\Omega'\rightarrow\hat\Omega)\psi (\vec { r } ,E',\: \hat\Omega')dE'
-                                \:d\hat\Omega' + q_{e}(\vec { r } ,E, \:\hat\Omega),
+                                \:d\hat\Omega' + q_{e}(\vec { r } ,E, \:\hat\Omega).
                         \end{multline}
                         \]
-                        <p>The Adjoint Neutron Transport Equation</p>
+                        <p>The Adjoint Neutron Transport Equation:</p>
                         \[
                         \begin{multline}
                         \hat\Omega \cdot \nabla \color{teal}{\psi^{\dagger}}
@@ -413,11 +413,11 @@
                                \int _{ 4\pi  } \int _{ 0 }^{ \infty  } \Sigma _{ s }(\color{violet}{E\rightarrow E'},
                                \color{purple}{\hat\Omega\rightarrow\hat\Omega'})\color{teal}{\psi^{\dagger}}  (\vec { r } ,E',\:
                                \hat\Omega')dE' \:d\hat\Omega' + \color{teal}{q_{e}^\dagger}(\vec { r } ,E,
-                                \:\hat\Omega),
+                                \:\hat\Omega).
                         \end{multline}
                         \]
-                        <p>The adjoint solution can be used to make an importance map for a desired outcome</p>
-                        <p>An exact adjoint solution can be used to obtain a zero variance Monte Carlo solution</p>
+                        <p>The adjoint solution can be used to make an importance map for a desired outcome.</p>
+                        <p>An exact adjoint solution can be used to obtain a zero variance Monte Carlo solution.</p>
                         </small>
                     </section>
                     <section>
@@ -502,15 +502,9 @@
                     </section>
                     <section>
                         <h3>Explicit angle biasing is difficult</h3>
-                        <img class="fragment" height="400" src="./images/omega/Space.svg">
-                        <img class="fragment" height="400" src="./images/omega/Energy2.svg">
-                        <img class="fragment" height="400" src="./images/omega/angle.svg">
-                    </section>
-                    <section>
-                        <h3>Explicit angle biasing is difficult</h3>
-                        <img class="fragment" align="middle" height="400" src="./images/omega/Space.svg">
-                        <img class="fragment" style="position:absolute; left:25%" height="400" src="./images/omega/Energy1.svg">
-                        <img class="fragment" style="position:absolute; left:25%" height="400" src="./images/omega/angle.svg">
+                        <img class="fragment" height="500" src="./images/omega/Space3.svg">
+                        <img class="fragment" height="500" src="./images/omega/Energy3.svg">
+                        <img class="fragment" height="500" src="./images/omega/Angle3.svg">
                     </section>
                     <section>
                         <h2>The $\Omega$ Flux</h2>
@@ -571,10 +565,10 @@
                     <section>
                         <h2>Moving Forward</h2>
                         <ul>
-                        <li>creating computational tools to design of the next generation of nuclear technology</li>
-                        <li>methods designed for applications</li>
-                        <li>open, reproducible analysis</li>
-                        <li>fast, interactive data visualization</li>
+                        <li>Creating computational tools to design of the next generation of nuclear technology</li>
+                        <li>Methods designed for applications</li>
+                        <li>Open, reproducible analysis</li>
+                        <li>Fast, interactive data visualization</li>
                         </ul>
                     </section>
                 </section>
