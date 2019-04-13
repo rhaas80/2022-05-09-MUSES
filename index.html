@@ -55,7 +55,7 @@
                     <h4>University of Wisconsin, Madison</h4>
                     <h4>2019.04.15</h4>
                 </section>
-                <section>
+                <section data-transition="convex">
                     <section>
                     <h5>About Me:</h5>
                         <span class="fragment">
@@ -262,7 +262,7 @@
                         <img height=400 src="./images/widgyts-slice.gif">
                     </section>
                 </section>
-                <section>
+                <section data-transition="convex">
                     <section>
                         <img height="600" src="./images/general/System1e.svg">
                         <img class="fragment" style="position:absolute; left:9.66%" height="600" src="./images/general/System1_long.svg">
@@ -341,7 +341,7 @@
                         </ul>
                     </section>
                 </section>
-                <section>
+                <section data-transition="convex">
                     <section>
                         <img height="600" src="./images/general/System1_long.svg">
                         <img class="fragment" style="position:absolute; left:9.66%" height="600" src="./images/general/System1_longb.svg">
@@ -558,7 +558,7 @@
                         </ul>
                     </section>
                 </section>
-                <section>
+                <section data-transition="convex">
                     <section>
                         <img height="600" src="./images/general/System1e.svg">
                     </section>
@@ -667,11 +667,12 @@
             Reveal.initialize({
                     controls: true,
                     progress: true,
+                    slideNumber: true,
                     history: true,
                     center: true,
             
                     theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-                    transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+                    transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
             
                     // Parallax scrolling
                     // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
