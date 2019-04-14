@@ -156,7 +156,10 @@
                     </section>
                     <section>
                         <div id="left">
-                            <h3>$^{99}$Mo production</h3>
+                            <font size=5>
+                                <p><b>My contribution:</b> Parametric study of design to maximize $^{99}$Mo </br></p>
+                                <b>Result:</b> Design patented, startup created, <a href="https://www.nrc.gov/info-finder/nonpower/nw-medical-isotopes.html">construction permit granted</a>
+                            </font>
                         <img height="300" src="./images/patent/patenttitle.png">
                         </div>
                         <div id="right">
@@ -260,6 +263,11 @@
                     </section>
                     <section>
                         <img height=400 src="./images/widgyts-slice.gif">
+                        <div id="bottom">
+                            <font size="2"><p>
+                            My <a href="https://munkm.github.io/2018-07-13-scipy/#/">slides</a> and <a href="https://www.youtube.com/watch?v=5dl_m_6T2bU">talk</a> from SciPy 2018
+                            </p></font>
+                        </div>
                     </section>
                 </section>
                 <section data-transition="convex">
@@ -274,7 +282,7 @@
                     <section>
                         <h3>The PB-FHR MK-1 Design</h3>
                         <div id="right">
-                        <img height="500" src="./images/PBFHR/RC_90cut_Neutronics.svg">
+                        <img height="375" src="./images/PBFHR/RC_90cut_Neutronics.svg">
                         </div>
                         <div id="left">
                             <font size="6">
@@ -287,6 +295,17 @@
                             <li>Central reflector houses control rod guide tubes</li>
                             </font>
                         </div>
+                        <footer align="left">
+                        <font size="2">
+                            <br><br>
+                            <p>Andreades, C., Cisneros, A. T., Choi, J. K., Chong, A. Y. K., Fratoni, M., Hong, S.,
+                            ... & Munk, M. (2014). Technical description of the ‘Mark 1’pebble-bed
+                            fluoride-salt-cooled high-temperature reactor (PB-FHR) power plant.
+                            Department of Nuclear Engineering, UC Berkeley, Report UCBTH-14-002.</p>
+                            <p>Andreades, Charalampos, et al. "Design Summary of the Mark-I Pebble-Bed,
+                            Fluoride Salt–Cooled, High-Temperature Reactor Commercial Power Plant."
+                            Nuclear Technology 195.3 (2016): 223-238.</p>
+                        </font></footer>
                     </section>
                     <section>
                         <h3>PB-FHR Central Reflector</h3>
@@ -311,13 +330,28 @@
                     </section>
                     <section>
                         <h3>Implementing Radiation-Induced Swelling</h3>
+                        <div id="left">
                         \[
                         \begin{align}
-                        \varepsilon_{inel} &= \alpha (T-T_{ref}) \\
-                        \varepsilon_{inel} &= \varepsilon_{fluence} \\
-                        T &= \frac{\varepsilon_{fluence}}{\alpha} + T_{ref}
+                        \varepsilon_{th} &= \alpha (T-T_{ref}) \\
+                        \varepsilon_{\Phi} &= \varepsilon_{th} \\
+                        T &= \frac{\varepsilon_{\Phi}}{\alpha} + T_{ref}
                         \end{align}
                         \]
+                        </div>
+                        <div id="right">
+                            <small>
+                            \[
+                            \begin{align}
+                            T_{ref} &= \mbox{ unstrained reference temperature }\\
+                            T &= \mbox{ Temperature required to induce strain }\\
+                            \varepsilon_{th} &= \mbox{ thermal strain }\\
+                            \varepsilon_{\Phi} &= \mbox{ strain induced from neutron fluence }\\
+                            \alpha &= \mbox{ coefficient of thermal expansion }
+                            \end{align}
+                            \]
+                            </small>
+                        </div>
                     </section>
                     <section>
                         <h3>Central Reflector Lifetime Estimates</h3>
@@ -334,11 +368,16 @@
                     </section>
                     <section>
                         <h3>Key Takeaways from the Lifetime Estimate</h3>
-                        <ul><font size="6">
-                                <li>Monolithic central reflector has <font color="red">prohibitively short lifetime</font> of 8 months, this is <font color="red">highly problematic</font> for a commercializable FHR design</li>
-                                <li>Coupling neutronics/structural mechanics provides <font color="green">design insight</font> to inform future iterations of this design, leading to <font color="green">reflector redesign</font></li>
+                        <div>
+                            <font size="6">
+                                <b>My contribution:</b> Created a novel tool to couple neutronics/strucutral mechanics</br>
+                                <b>Result:</b> Lifetime estimated, reflector redesigned, Kairos power startup
                             </font>
-                        </ul>
+                        </div>
+                        <footer align="left">
+                        <font size="2">
+                            <p>Munk, Madicken. An analysis of Radiation-Induced Stresses of a Graphite Central Reflector in a Pebble Bed Fluoride Salt-Cooled Reactor Core. Diss. University of California Berkeley, 2013.</p>
+                        </font></footer>
                     </section>
                 </section>
                 <section data-transition="convex">
@@ -352,7 +391,7 @@
                             <font size="6">
                             <ul class="fragment">
                                 <li>Radiation shielding is important</li>
-                                <li>"Analog" Monte Carlo methods for these problems is not ideal
+                                <li>"Analog" Monte Carlo is not ideal for these problems
                                     <ul>
                                         <li>Lots of particles <b>&#8594;</b> good statistics</li>
                                         <li>Good shielding    <b>&#8594;</b> very few particles</li>
@@ -361,12 +400,16 @@
                             </ul>
                             </font>
                         </div>
-                        <div id="right">
-                            <img src="./images/omega/ww-mcnp.svg" height="300" class="fragment">
+                        <div id="right" class="fragment">
+                            <img src="./images/omega/ww-mcnp.svg" height="300">
+                            <font size="2">
+                                <p>Image Credit: MCNP, X. Monte Carlo Team, MCNP–A General Purpose Monte Carlo N-Particle Transport Code, Version 5. LA-UR-03-1987, Los Alamos National Laboratory, April 2003.</p>
+                            </font>
+
                         </div>
                     </section>
                     <section>
-                        <h3>hybrid methods</h3>
+                        <h3>Hybrid Methods</h3>
                         <img src="./images/omega/mc_det.svg" height="400">
                         <ul>
                             <small>
@@ -378,21 +421,16 @@
                         </ul>
                     </section>
                     <section>
-                        <div id="left" class="fragment" align="center">
-                        <img src="./images/omega/forward_problem.svg" height="450">
-                        <font size=6 align="center">The forward problem</font>
-                        </div>
-                        <div id="right" class="fragment" align="center">
-                        <img src="./images/omega/adjoint_problem.svg" height="450">
-                        <font size=6 align="center">The adjoint problem</font>
-                        </div>
+                        <h4>A Forward Problem</h4>
+                        <img src="./images/omega/forward_problem.svg" height="600">
                     </section>
                     <section>
+                        <h4>An Adjoint Problem</h4>
                         <img src="./images/omega/adjoint_problem.svg" height="600">
                     </section>
                     <section>
                         <small>
-                        <p>The Forward Neutron Transport Equationi:</p>
+                        <p>The forward neutron transport equation:</p>
                         \[
                         \begin{multline}
                         \hat\Omega \cdot \nabla \psi
@@ -403,7 +441,7 @@
                                 \:d\hat\Omega' + q_{e}(\vec { r } ,E, \:\hat\Omega).
                         \end{multline}
                         \]
-                        <p>The Adjoint Neutron Transport Equation:</p>
+                        <p>The adjoint neutron transport equation:</p>
                         \[
                         \begin{multline}
                         \hat\Omega \cdot \nabla \color{teal}{\psi^{\dagger}}
@@ -435,7 +473,7 @@
                             $
                             <p align="left">Point source</p>
                             $q ( \vec{r}, E, \hat{\Omega}) = \delta(\vec{r}-\vec{r_0})\delta(\vec{E}-\vec{E_0})\delta(\vec{\hat{\Omega}}-\vec{\hat{\Omega}_0})$
-                            <font color="purple"><p align="left">Response = Adjoint Flux</p>
+                            <font color="purple"><p align="left">Response = adjoint flux</p>
                             $R = \psi^{\dagger} (r_0, E_0, \Omega_0)$
                             </font>
                         </small>
@@ -468,6 +506,19 @@
                         </div>
                     </section>
                     <section>
+                        <img height="525" src="./images/omega/Hybrid_Codes.svg">
+                        <img class="fragment" style="position:absolute; left:2.5%" height="525" src="./images/omega/Hybrid1.svg">
+                        <img class="fragment" style="position:absolute; left:2.5%" height="525" src="./images/omega/Hybrid2.svg">
+                        <img class="fragment" style="position:absolute; left:2.5%" height="525" src="./images/omega/Hybrid3.svg">
+                        <img class="fragment" style="position:absolute; left:2.5%" height="525" src="./images/omega/Hybrid4.svg">
+                        <div id="bottom" align="left">
+                        <font size="2">
+                             <p>MCNP, X. Monte Carlo Team, MCNP–A General Purpose Monte Carlo N-Particle Transport Code, Version 5. LA-UR-03-1987, Los Alamos National Laboratory, April 2003.</p>
+                             <p>Evans, Thomas M., et al. "Denovo: A new three-dimensional parallel discrete ordinates code in SCALE." Nuclear technology 171.2 (2010): 171-200.</p>
+                             <p>Mosher, Scott W., et al. "ADVANTG—an automated variance reduction parameter generator." ORNL/TM-2013/416, Oak Ridge National Laboratory (2013).</p>
+                        </font></div>
+                    </section>
+                    <section>
                         <h3>The CADIS method</h3>
                         <div id="left">
                             <p>Biased source distribution</p>
@@ -490,15 +541,8 @@
                             </font>
                         </div>
                     </section>
-                    <section>
-                        <img class="fragment" height="600" src="./images/omega/Hybrid_Codes.svg">
-                        <img class="fragment" style="position:absolute; left:2.5%" height="600" src="./images/omega/Hybrid1.svg">
-                        <img class="fragment" style="position:absolute; left:2.5%" height="600" src="./images/omega/Hybrid2.svg">
-                        <img class="fragment" style="position:absolute; left:2.5%" height="600" src="./images/omega/Hybrid3.svg">
-                        <img class="fragment" style="position:absolute; left:2.5%" height="600" src="./images/omega/Hybrid4.svg">
-                    </section>
 				    <section data-background-image="./images/omega/maze2MadjG00.png" style="background: rgba(255, 255, 255, 0.80);">
-                        <h3>Angle isn't captured</h3>
+                        <h3>Angle Isn't Captured</h3>
                     </section>
                     <section>
                         <h3>Explicit angle biasing is difficult</h3>
@@ -549,13 +593,18 @@
                     </section>
                     <section>
                         <h3>Key Takeaways from the $\Omega$-methods</h3>
-                        <ul><font size="6">
-                            <li>Demonstrates an ability to <font color="green">reduce uncertainty</font> in anisotropic energy groups of f4 energy tally</li>
-                            <li>Has <font color="green">stronger performance than CADIS</font> for many problems.</li>
-                            <li>Exhibits a <font color="blue">dampening of ray effects</font> in regions where the forward and adjoint are perpindicular</li>
-                            <li>Effectively <font color="green">captures streaming behavior</font></li>
+                        <div>
+                            <font size="6">
+                                <b>My contribution:</b> Created and implemented a novel method to capture angle in ADVANTG, developed novel methodology to analyze anisotropy in problems</br>
+                                <b>Result:</b> New insight into shield designs, robust characterization of method
                             </font>
-                        </ul>
+                        </div>
+                        <footer align="left">
+                        <font size="2">
+                            <p>Munk, Madicken. FW/CADIS-Ω: An Angle-Informed Hybrid Method for Neutron Transport. Diss. UC Berkeley, 2017. </p>
+                            <p>Munk, Madicken, et al. "FW/CADIS-$\Omega $: An angle-informed hybrid method for deep-penetration radiation transport." arXiv preprint arXiv:1612.00793 (2016).</p>
+                            </font>
+                        </footer>
                     </section>
                 </section>
                 <section data-transition="convex">
@@ -568,7 +617,7 @@
                         <li>Creating computational tools to design of the next generation of nuclear technology</li>
                         <li>Methods designed for applications</li>
                         <li>Open, reproducible analysis</li>
-                        <li>Fast, interactive data visualization</li>
+                        <li>Fast, interactive data visualization to assist with design</li>
                         </ul>
                     </section>
                 </section>
