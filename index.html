@@ -344,7 +344,7 @@
                             \[
                             \begin{align}
                             T_{ref} &= \mbox{ unstrained reference temperature }\\
-                            T &= \mbox{ Temperature required to induce strain }\\
+                            T &= \mbox{ temperature inducing strain }\\
                             \varepsilon_{th} &= \mbox{ thermal strain }\\
                             \varepsilon_{\Phi} &= \mbox{ strain induced from neutron fluence }\\
                             \alpha &= \mbox{ coefficient of thermal expansion }
@@ -378,6 +378,22 @@
                         <font size="2">
                             <p>Munk, Madicken. An analysis of Radiation-Induced Stresses of a Graphite Central Reflector in a Pebble Bed Fluoride Salt-Cooled Reactor Core. Diss. University of California Berkeley, 2013.</p>
                         </font></footer>
+                    </section>
+                    <section>
+                        <h3>Future Work</h3>
+                        <div id="right">
+                            <font size="5" align="left">
+                            <p><b>Idea: </b> Perform lifetime evaluations on core components in emerging reactor designs based on coupled physics</p>
+                            <p><b>Deliverable: </b> software, lifetime characterization</p>
+                            <p><b>Collaborators:</b> Kairos Power, Westinghouse, INL</p>
+                            <p><b>Funding:</b> DOE-NE, ARPA-E, SBIR</p>
+                            </font>
+                        </div>
+                        <div id="left">
+                            <img style="margin-bottom:0" src="./images/PBFHR/evinci.png" height="350">
+                            <p style="margin-top:0; margin-bottom:0;"><font size="3" align="center"><b>Image Credit:</b> Westinghouse eVinci micro reactor <a href="http://www.westinghousenuclear.com/Portals/0/new%20plants/evincitm/GTO-0001_eVinci_flysheet_RSB_03-2019_003.pdf?ver=2019-04-04-140824-613">link</a> 
+                            </font></p>
+                        </div>
                     </section>
                 </section>
                 <section data-transition="convex">
@@ -481,17 +497,31 @@
                     <section>
                         <h2>A Simple Labyrinth</h2>
                         <div id="left">
-                            <img height="500" src="./images/omega/maze2geom.png">
+                            <img height="400" src="./images/omega/maze2geom.png">
                         </div>
                         <div id="right">
-                            <ul><font size="6">
+                            <ul>
+                            <font size="4">
+                                <p><b>General:</b></p>
+                            <ul align="left">
                             <li>Point source</li>
                             <li>NaI detector, concrete barrier</li>
                             <li>Vacuum boundary conditions</li>
+                            </ul>
+                            <p><b>Monte Carlo specific:</b></p>
+                            <ul>
                             <li>NaI reaction rate with track length tally (f4)</li>
                             <li>Tally energy binning consistent with XS library</li>
-                            <li>27g19n XS library, QR quadrature, SC solver, P$_N$ order 3</li>
-                            </font></ul>
+                            </ul>
+                            <p><b>Denovo specific:</b></p>
+                            <ul>
+                            <li>27g19n XS library</li> 
+                            <li>QR quadrature</li> 
+                            <li>SC solver</li>
+                            <li>P$_N$ order 3</li>
+                            </ul>
+                            </font>
+                            </ul>
                         </div>
                     </section>
                     <section>
@@ -518,29 +548,6 @@
                              <p>Mosher, Scott W., et al. "ADVANTG—an automated variance reduction parameter generator." ORNL/TM-2013/416, Oak Ridge National Laboratory (2013).</p>
                         </font></div>
                     </section>
-                    <section>
-                        <h3>The CADIS method</h3>
-                        <div id="left">
-                            <p>Biased source distribution</p>
-                            <p>Starting weight of the particles</p>
-                            <p>Weight window target values</p>
-                        </div>
-                        <div id="right">
-                            <font size="6">
-                            <p align="right">
-                            $\\ \hat{q}(\vec{r},E) = \frac{\phi^{\dagger}(\vec{r},E)q(\vec{r},E)}{R} \\$
-                            </p>
-                            <p></p>
-                            <p align="right">
-                            $\\ w_{0}(\vec{r},E) = \frac{q(\vec{r},E)}{\hat{q}(\vec{r},E)} = \frac{R}{\phi^{\dagger}(\vec{r},E)} \\$
-                            </p>
-                            <p></p>
-                            <p align="right">
-                            $\\ w(\vec{r},E) = \frac{R}{\phi^{\dagger}(\vec{r},E)}$
-                            </p>
-                            </font>
-                        </div>
-                    </section>
 				    <section data-background-image="./images/omega/maze2MadjG00.png" style="background: rgba(255, 255, 255, 0.80);">
                         <h3>Angle Isn't Captured</h3>
                     </section>
@@ -566,29 +573,52 @@
                     <section>
                         <div id="left">
                             <img height="400" src="./images/omega/maze2MadjG00.png">
-                            <p align="center">Traditional Adjoint Flux</p>
+                            <p align="center">Adjoint Flux</p>
+                            <p align="center"><font size="5">Used by CADIS</font></p>
                         </div>
                         <div id="right">
                             <img height="400" src="./images/omega/maze2MomegaG00.png">
                             <p align="center">$\Omega$ Flux</p>
+                            <p align="center"><font size="5">Used by CADIS-$\Omega$</font></p>
                         </div>
                     </section>
                     <section>
-                        <h2>A Simple Labyrinth</h2>
-                        <div id="left">
-                            <img height="350" src="./images/omega/maze_2_tally_result_compare.png">
-                        </div>
-                        <div id="right">
-                            <img height="350" src="./images/omega/maze_2_tally_error_compare.png">
+                        <h2>Steel Beam in Concrete</h2>
+                        <div>
+                            <img height="500" src="./images/omega/prob1geom.png">
                         </div>
                     </section>
                     <section>
-                        <h2>A Simple Labyrinth</h2>
-                        <div id="left">
-                            <img height="150" src="./images/omega/maze2FOMS.png">
+                        <h2>Steel Beam in Concrete</h2>
+                        <div>
+                            <img height="500" src="./images/omega/RE_prob1.png">
                         </div>
-                        <div id="right">
-                            <img height="200" src="./images/omega/maze2time.png">
+                    </section>
+                    <section>
+                            <img height="200" src="./images/omega/Prob1_fom.png">
+                            <p style="margin-top:0; margin-bottom:0;"><font size="3" align="center"><b>Above:</b> Figure of Merit results for CADIS and CADIS-$\Omega$ for various tally regions of interest</font></p>
+                            <p style="margin-top:0; margin-bottom:0;"><font size="3" align="center"><b>Below:</b> Timing results for CADIS and CADIS-$\Omega$</font></p>
+                            <img height="250" src="./images/omega/Prob1_time.png">
+                    </section>
+                    <section data-transition="none">
+                            <img height="200" src="./images/omega/Prob1_fom_highlight.png">
+                            <p style="margin-top:0; margin-bottom:0;"><font size="3" align="center"><b>Above:</b> Figure of Merit results for CADIS and CADIS-$\Omega$ for various tally regions of interest</font></p>
+                            <p style="margin-top:0; margin-bottom:0;"><font size="3" align="center"><b>Below:</b> Timing results for CADIS and CADIS-$\Omega$</font></p>
+                            <img height="250" src="./images/omega/Prob1_time_highlight.png">
+                    </section>
+                    <section>
+                        <h4>Flux Anisotropies</h4>
+                        <div>
+                            <img height="500" src="./images/omega/prob1M2G26.png">
+                            <p style="margin-top:0; margin-bottom:0;"><font size="3" align="center">Anisotropy Metric 2 ( $\phi^{\dagger}_{\Omega}/\phi^{\dagger}$ ) Distribution, Group 26 for Steel Beam in Concrete</font></p>
+                        </div>
+                    </section>
+                    <section>
+                        <div>
+                            <img height="275" style="margin-bottom:0" src="./images/omega/m4_violin.png">
+                            <p style="margin-top:0; margin-bottom:0;"><font size="3" align="center"><b>Above:</b> Anisotropy Metric 4 Distribution ( $\psi^{c}_{max:avg}/\psi^{\dagger}_{max:avg}$ ), by Energy Group, in Regions where the Contributon Flux is High</font></p>
+                            <p style="margin-top:0; margin-bottom:0;"><font size="3" align="center"><b>Below:</b> Trend Results for Anisotropy Metric 4 as Related to the Ratio of Relative Errors $RE_{\Omega}/RE_{CADIS}$</font></p>
+                            <img height="275" style="margin-top:0" src="./images/omega/m4_stats.png">
                         </div>
                     </section>
                     <section>
@@ -605,6 +635,31 @@
                             <p>Munk, Madicken, et al. "FW/CADIS-$\Omega $: An angle-informed hybrid method for deep-penetration radiation transport." arXiv preprint arXiv:1612.00793 (2016).</p>
                             </font>
                         </footer>
+                    </section>
+                    <section>
+                        <h3>Future Work</h3>
+                        <div id="right">
+                            <font size="5" align="left">
+                            <p><b>Idea:</b> Use anisotropy metrics to characterize beyond $\Omega$-methods</p>
+                            <p><b>Deliverable: </b> Robust scheme to recommend method based on problem type, open-source package to calculate anisotropy metrics, </p>
+                            <p><b>Collaborators:</b> ORNL, LANL</p>
+                            <p><b>Funding:</b> DOE-NE, NSF </p>
+                            </font>
+                        </div>
+                        <div id="left">
+                            <img src="./images/omega/futurestats.png" height="275">
+                        </div>
+                    </section>
+                    <section>
+                        <h3>Future Work</h3>
+                        <div>
+                            <font size="5" align="left">
+                            <p><b>Idea: </b> Build out suite of novel analysis tools for nuclear engineering with PyNE+yt, potentially serpent-tools</p>
+                            <p><b>Deliverable: </b> Packaged, documented, and tested suite of open source tools</p>
+                            <p><b>Collaborators:</b> DXL, GaTech</p>
+                            <p><b>Funding:</b> NSF, Moore-Sloan</p>
+                            </font>
+                        </div>
                     </section>
                 </section>
                 <section data-transition="convex">
@@ -674,12 +729,7 @@
                 </section>
                 <section>
                     <section>
-                        Backup Slides
-                    </section>
-                    <section>
-                        Backup Slides
-                        <br/>
-                        Research Idea
+                        Backup Slides: Computing
                     </section>
                     <section data-background-iframe="https://discover-cookbook.numfocus.org" 
                         data-background-interactive>
@@ -690,6 +740,66 @@
                     <section data-background-iframe="https://jhepc.github.io/gallery.html" 
                         data-background-interactive>
                     </section>
+                </section>
+                <section>
+                    <section>Backup Slides: The $\Omega$ Methods</section>
+                    <section>
+                        <h3>The CADIS method</h3>
+                        <div id="left">
+                            <p>Biased source distribution</p>
+                            <p>Starting weight of the particles</p>
+                            <p>Weight window target values</p>
+                        </div>
+                        <div id="right">
+                            <font size="6">
+                            <p align="right">
+                            $\\ \hat{q}(\vec{r},E) = \frac{\phi^{\dagger}(\vec{r},E)q(\vec{r},E)}{R} \\$
+                            </p>
+                            <p></p>
+                            <p align="right">
+                            $\\ w_{0}(\vec{r},E) = \frac{q(\vec{r},E)}{\hat{q}(\vec{r},E)} = \frac{R}{\phi^{\dagger}(\vec{r},E)} \\$
+                            </p>
+                            <p></p>
+                            <p align="right">
+                            $\\ w(\vec{r},E) = \frac{R}{\phi^{\dagger}(\vec{r},E)}$
+                            </p>
+                            </font>
+                        </div>
+                    </section>
+                    <section>
+                        <h3>Anisotropy Metrics</h3>
+                        <div id="left">
+                            <font size=4>
+                            \begin{align}
+                            M_1 &= \frac{\phi^{c}}{\Phi^{c}} \\
+                            M_2 &= \frac{\phi^{\dagger}_{\Omega}}{\phi^{\dagger}} \\
+                            M_3 &= \frac{\psi^{c}_{Max}}{\psi^{c}_{Avg}} \\
+                            \end{align}
+                            </font>
+                        </div>
+                        <div id="right">
+                            <font size=4>
+                            \begin{align}
+                            M_4 &= \frac{\frac{\psi^{c}_{Max}}{\psi^{c}_{Avg}}}{\frac{\psi^{\dagger}_{Max}}{\psi^{\dagger}_{Avg}}} \\
+                            M_5 &= \frac{\psi^{c}_{Max}}{\psi^{c}_{Min}} \\
+                            M_6 &= \frac{\frac{\psi^{c}_{Max}}{\psi^{c}_{Min}}}{\frac{\psi^{\dagger}_{Max}}{\psi^{\dagger}_{Min}}}
+                            \end{align}
+                            </font>
+                        </div>
+                    </section>
+                    <section>
+                        <h3>Future Work</h3>
+                        <div>
+                            <font size="5" align="left">
+                            <p><b>Idea: </b> Use LDO quadrature set to do angle biasing in Monte Carlo</p>
+                            <p><b>Deliverable: </b> Angle biasing in Monte Carlo for low angular refinement </p>
+                            <p><b>Collaborators:</b> ORNL, UC Berkeley Neutronics </p>
+                            <p><b>Funding:</b> DOE-NE, ORNL subcontract</p>
+                            </font>
+                        </div>
+                    </section>
+                </section>
+                <section>
                     <section>
                         Backup Slides: Ar/Ar Geochronology
                     </section>
