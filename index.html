@@ -3,21 +3,13 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Tools for Transformation: Computational Methods and Modeling in Nuclear Engineering</title>
+		<title>Best Practices in Software Engineering for Scientific Computing</title>
 
         <meta name="description" content="
-        A seminar given in the Nuclear Engineering and Engineering Physics at the University
-        of Wisconsin, Madison on April 15, 2019
-        
-        Computational tools are our first step to model, design, and study innovative nuclear 
-        technologies, eventually bringing these technologies to licensing and deployment. 
-        Each stage of computational tool development--from implementing numerical methods 
-        to modeling and analysis--has unique design requirements. This talk covers three different 
-        computational tools: including a coupled neutronics/structural mechanics method 
-        using MCNP and COMSOL; FW/CADIS-Ω, a hybrid method for deep-penetration neutron 
-        transport; and widgyts, a tool to interactively explore volumetric data. 
-        Each will be complemented by a discussion of how the tool both expands and 
-        provides limited insight into our data. 
+        A one hour presentation on best practices for software development in scientific computing. 
+        Given to the Blue Waters Fellows cohort of 2019/2020 at the National Center for 
+        Supercomputing Applications at the University of Illinois at Urbana Champagne, September 25,
+        2019. 
         ">
         <meta name="author" content="Madicken Munk">
         
@@ -47,13 +39,12 @@
 			<div class="slides">
 				<section>
                     <h3>
-                        Tools for Transformation:
+                        Best Practices in Software Engineering for Scientific Computing
                     </h3>
-                    <h4>Computational Methods and Modeling in Nuclear Engineering</h4>
                     <br/>
                     <h4>Dr. Madicken Munk</h4>
-                    <h4>University of Wisconsin, Madison</h4>
-                    <h4>2019.04.15</h4>
+                    <h4>National Center for Supercomputing Applications</h4>
+                    <h4>2019.09.25</h4>
                 </section>
                 <section data-transition="convex">
                     <section>
@@ -143,123 +134,12 @@
                             </a>
                         </span>
                     </section>
-                    <section>
-                        <h3>The Computational Landscape</h3>
-                        <img height="600" src="./images/general/System1.svg">
-                        <img class="fragment" style="position:absolute; left:9.66%" height="600" src="./images/general/System1a.svg">
-                        <img class="fragment" style="position:absolute; left:9.66%" height="600" src="./images/general/System1b.svg">
-                        <img class="fragment" style="position:absolute; left:9.66%" height="600" src="./images/general/System1c.svg">
-                        <img class="fragment" style="position:absolute; left:9.66%" height="600" src="./images/general/System1d.svg">
-                        <img class="fragment" style="position:absolute; left:9.66%" height="600" src="./images/general/System1e.svg">
-                        <img class="fragment" style="position:absolute; left:9.66%" height="600" src="./images/general/System1_short.svg">
-                        <img class="fragment" style="position:absolute; left:9.66%" height="600" src="./images/general/System1_shorta.svg">
-                    </section>
-                    <section>
-                        <div id="left">
-                            <font size=5>
-                                <p><b>My work:</b> Parametric study of design to maximize $^{99}$Mo </br></p>
-                                <b>Result:</b> Design patented, startup created, <a href="https://www.nrc.gov/info-finder/nonpower/nw-medical-isotopes.html">construction permit granted</a>
-                            </font>
-                        <img height="300" src="./images/patent/patenttitle.png">
-                        </div>
-                        <div id="right">
-                        <img height="500" src="./images/patent/patentf3.png">
-                        </div>
-                        <font size="2">
-                        <a href="https://patents.google.com/patent/US20120027152A1/en">https://patents.google.com/patent/US20120027152A1/en</a>
-                        </font>
-                    </section>
-                    <section data-background-image="./images/rover/NASA_cropped.png" data-background-size="40%" data-background-position="bottom left">
-                        <div>
-                            <img height="100" src="./images/rover/bgc_logo_big.gif">
-                            <img height="100" src="./images/rover/SUERC-logo.png">
-                        </div>
-                        <div>
-                            <img src="./images/rover/XSAr.jpg" height="300">
-                            <img src="./images/rover/ArAge.jpg" height="300">
-                        </div>
-                        <div id="bottom">
-                        <font size="2">
-                            <p align="right"><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/ggr.12170" style="color:black;"><i>Instrumentation Development for In Situ $^{40}$Ar/$^{39}$Ar Geochronology</i>, Morgan, L., Munk, M., et al; Geostandards and Geoanalytical Research 2017</a></p>
-                            <p align="right"><a href="http://munkm.github.io/papers/munk_mc15.pdf" style="color:black;"><i>Design and feasibility study of a compact neutron source for extraterrestrial geochronology applications</i>, Munk, M., Morgan, L., et. al; ANS M&C 2015</a></p>
-                        </font>
-                        </div>
-                    </section>
-                    <section>
-                        <img height="600" src="./images/general/System1_short.svg">
-                        <img class="fragment" style="position:absolute; left:9.66%" height="600" src="./images/general/System1_shortb.svg">
-                    </section>
                     <section data-background-image="./images/isolated.png" style="background: rgba(255, 255, 255, 0.80);">
                         <h3>yt and widgyts</h3>
                         </br>
                         <a href="https://yt-project.org/">Project website</a>
                         </br>
                         <a href="https://github.com/yt-project/yt">Project repository</a>
-                    </section>
-                    <section>
-                        <span class="fragment">
-                            <img width="100" src="./images/athena.png">
-                            <img width="100" src="./images/changa.png">
-                            <img width="100" src="./images/enzo.png">
-                            <img width="100" src="./images/flash.png">
-                            <img width="100" src="./images/gadget.png">
-                            <img width="100" src="./images/gasoline.png">
-                            <img width="100" src="./images/moose.png">
-                            <img width="100" src="./images/ramses.png">
-                        </span>
-                        <span>
-                        <h3 class="fragment"><b>&darr;</b></h1>
-                        </span>
-                        <span>
-                        <img height="120"
-                        src="https://github.com/yt-project/yt/raw/master/doc/source/_static/yt_logo.png"
-                        alt="yt project"
-                        class="fragment">
-                        </span>
-                        <span>
-                        <h3 class="fragment"><b>&darr;</b></h1>
-                        </span>
-                        <span>
-                        <h3 class="fragment">Analysis and Visualization</h3>
-                        </span>
-                    </section>
-                    <section>
-                        <h3>Domain Context System</h3>
-                        <div id="left">
-                            <ul>
-                                <li>Weather and Climate</li>
-                                <li>Oceanography and Hydrology</li>
-                                <li>Whole-earth seismography and tomography</li>
-                                <li>Observational Astro</li>
-                                <li>Nuclear Engineering</li>
-                                <li>Neuroscience</li>
-                            </ul>
-                        </div>
-                        </br>
-                        <div id="right">
-                            <img class="fragment fade-out" width="300" style="position: absolute;" 
-                             src="./images/weather.png" 
-                             title=""/>
-                            <img class="fragment fade-in" width="300" style="position: absolute;" 
-                             src="./images/weather2.png" 
-                             title=""/>
-                            <img class="fragment" width="300" style="position: absolute;" 
-                             src="./images/world.png" 
-                             title=""/>
-                            <img class="fragment" width="400" style="position: absolute;" 
-                             src="./images/yt_mri_z_mean.png" 
-                             title=""/>
-                        </div>
-                    </section>
-                    <section>
-                        <h3>Geographic Projections</h3>
-                        <span>
-                            <img height=400 class="fragment fade-out" src="./images/ortho2.gif" 
-                                 style="position:absolute"
-                                 title="orthographic projection of GEOS-5 global weather model from August 22, 2018">
-                            <img height=500 class="fragment fade-in" src="./images/robinson2.gif" 
-                                 title="robinson projection of GEOS-5 global weather model from August 22, 2018">
-                        </span>
                     </section>
                     <section>
                         <img height=400 src="./images/widgyts-slice.gif">
@@ -271,410 +151,8 @@
                     </section>
                 </section>
                 <section data-transition="convex">
-                    <section>
-                        <img height="600" src="./images/general/System1e.svg">
-                        <img class="fragment" style="position:absolute; left:9.66%" height="600" src="./images/general/System1_long.svg">
-                        <img class="fragment" style="position:absolute; left:9.66%" height="600" src="./images/general/System1_longa.svg">
-                    </section>
-                    <section>
-                        <img height="500" src="http://fhr.nuc.berkeley.edu/wp-content/uploads/2013/08/WebSideRight.png">
-                    </section>
-                    <section>
-                        <h3>The PB-FHR MK-1 Design</h3>
-                        <div id="right">
-                        <img height="375" src="./images/PBFHR/RC_90cut_Neutronics.svg">
-                        </div>
-                        <div id="left">
-                            <font size="6">
-                            <li>236 MWth core</li>
-                            <li>300 C/HM fueled pebbles, 19.99% enrichment</li>
-                            <li>FLiBe coolant, enriched to 99.999 wt% Li6</li>
-                            <li>Power density 23.0 MW/$m^3$</li>
-                            <li>Buoyant pebble fuel</li>
-                            <li>Online refueling, annular core</li>
-                            <li>Central reflector houses control rod guide tubes</li>
-                            </font>
-                        </div>
-                        <footer align="left">
-                        <font size="2">
-                            <br><br>
-                            <p>Andreades, C., Cisneros, A. T., Choi, J. K., Chong, A. Y. K., Fratoni, M., Hong, S.,
-                            ... & Munk, M. (2014). Technical description of the ‘Mark 1’pebble-bed
-                            fluoride-salt-cooled high-temperature reactor (PB-FHR) power plant.
-                            Department of Nuclear Engineering, UC Berkeley, Report UCBTH-14-002.</p>
-                            <p>Andreades, Charalampos, et al. "Design Summary of the Mark-I Pebble-Bed,
-                            Fluoride Salt–Cooled, High-Temperature Reactor Commercial Power Plant."
-                            Nuclear Technology 195.3 (2016): 223-238.</p>
-                        </font></footer>
-                    </section>
-                    <section>
-                        <h3>PB-FHR Central Reflector</h3>
-                        <img height="500" src="./images/PBFHR/CentralReflector_Simple.svg">
-                        <img height="500" src="./images/PBFHR/CentralReflector_Simple_Cutout.svg">
-                        <img height="500" src="./images/PBFHR/RC_90cut_Neutronics.svg">
-                    </section>
-                    <section>
-                        <h3>Tools for Simulation?</h3>
-                    </section>
-                    <section>
-                        <h3>Central Reflector Lifetime Estimates</h3>
-                        <font size="6">
-                        <p class="fragment">Use MCNP to get the fluence data for the reflector</p>
-                        <p class="fragment"><b>&#8595;</b></p>
-                        <p class="fragment">Use fluence and experimental data to calculate radiation-induced strain</p>
-                        <p class="fragment"><b>&#8595;</b></p>
-                        <p class="fragment">Use strain calculation to impose a pseudo-temperature distribution in FEM</p>
-                        <p class="fragment"><b>&#8595;</b></p>
-                        <p class="fragment">Use FEM and fluence buildup to determine lifetime</p>
-                        </font>
-                    </section>
-                    <section>
-                        <h3>Implementing Radiation-Induced Swelling</h3>
-                        <div id="left">
-                        \[
-                        \begin{align}
-                        \varepsilon_{th} &= \alpha (T-T_{ref}) \\
-                        \varepsilon_{\Phi} &= \varepsilon_{th} \\
-                        T &= \frac{\varepsilon_{\Phi}}{\alpha} + T_{ref}
-                        \end{align}
-                        \]
-                        </div>
-                        <div id="right">
-                            <small>
-                            \[
-                            \begin{align}
-                            T_{ref} &= \mbox{ unstrained reference temperature }\\
-                            T &= \mbox{ temperature inducing strain }\\
-                            \varepsilon_{th} &= \mbox{ thermal strain }\\
-                            \varepsilon_{\Phi} &= \mbox{ strain induced from neutron fluence }\\
-                            \alpha &= \mbox{ coefficient of thermal expansion }
-                            \end{align}
-                            \]
-                            </small>
-                        </div>
-                    </section>
-                    <section>
-                        <h3>Central Reflector Lifetime Estimates</h3>
-                        <img height="500" src="./images/PBFHR/StressMises.gif">
-                    </section>
-                    <section>
-                        <h3>PB-FHR Central Reflector</h3>
-                        <ul>
-                        <img height="500" src="./images/PBFHR/CentralReflector_Simple_Cutout.svg">
-                        <img height="500" src="./images/PBFHR/CentralReflector_solid_detail.svg">
-                        <img height="500" src="./images/PBFHR/CentralReflector_explode_detail.svg">
-                        <img height="150" src="./images/PBFHR/CentralReflector_single_detail.svg">
-                        </ul>
-                    </section>
-                    <section>
-                        <h3>Key Takeaways from the Lifetime Estimate</h3>
-                        <div>
-                            <font size="6">
-                                <b>My work:</b> Created a novel tool to couple neutronics/strucutral mechanics</br>
-                                <b>Result:</b> Lifetime estimated, reflector redesigned, Kairos power startup
-                            </font>
-                        </div>
-                        <footer align="left">
-                        <font size="2">
-                            <p>Munk, Madicken. An analysis of Radiation-Induced Stresses of a Graphite Central Reflector in a Pebble Bed Fluoride Salt-Cooled Reactor Core. Diss. University of California Berkeley, 2013.</p>
-                        </font></footer>
-                    </section>
-                    <section>
-                        <h3>Future Work</h3>
-                        <div id="right">
-                            <font size="5" align="left">
-                            <p><b>Idea: </b> Perform lifetime evaluations on core components in emerging reactor designs based on coupled physics</p>
-                            <p><b>Deliverable: </b> software, lifetime characterization</p>
-                            <p><b>Collaborators:</b> Kairos Power, Westinghouse, INL</p>
-                            <p><b>Funding:</b> DOE-NE, ARPA-E, SBIR</p>
-                            </font>
-                        </div>
-                        <div id="left">
-                            <img style="margin-bottom:0" src="./images/PBFHR/evinci.png" height="350">
-                            <p style="margin-top:0; margin-bottom:0;"><font size="3" align="center"><b>Image Credit:</b> Westinghouse eVinci micro reactor <a href="http://www.westinghousenuclear.com/Portals/0/new%20plants/evincitm/GTO-0001_eVinci_flysheet_RSB_03-2019_003.pdf?ver=2019-04-04-140824-613">link</a> 
-                            </font></p>
-                        </div>
-                    </section>
                 </section>
                 <section data-transition="convex">
-                    <section>
-                        <img height="600" src="./images/general/System1_long.svg">
-                        <img class="fragment" style="position:absolute; left:9.66%" height="600" src="./images/general/System1_longb.svg">
-                    </section>
-                    <section>
-                        <h3>Why Variance Reduction?</h3>
-                        <div id="left">
-                            <font size="6">
-                            <ul class="fragment">
-                                <li>Radiation shielding is important</li>
-                                <li>"Analog" Monte Carlo is not ideal for these problems
-                                    <ul>
-                                        <li>Lots of particles <b>&#8594;</b> good statistics</li>
-                                        <li>Good shielding    <b>&#8594;</b> very few particles</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            </font>
-                        </div>
-                        <div id="right" class="fragment">
-                            <img src="./images/omega/ww-mcnp.svg" height="300">
-                            <font size="2">
-                                <p>Image Credit: MCNP, X. Monte Carlo Team, MCNP–A General Purpose Monte Carlo N-Particle Transport Code, Version 5. LA-UR-03-1987, Los Alamos National Laboratory, April 2003.</p>
-                            </font>
-
-                        </div>
-                    </section>
-                    <section>
-                        <h3>Hybrid Methods</h3>
-                        <img src="./images/omega/bestofboth.svg" height="400">
-                        <ul>
-                            <small>
-                            <li>Deterministic solution used to create importance map</li>
-                            <li>Importance map <b>&#8594;</b> Monte Carlo <b>&#8594;</b> improves solution, reduces time</li>
-                            <li>Importance: contribution to a tally</li>
-                            <li>Common solution: use deterministic solution to adjoint equation for importance map.</li>
-                            </small>
-                        </ul>
-                    </section>
-                    <section>
-                        <h4>A Forward Problem</h4>
-                        <img src="./images/omega/forward_problem.svg" height="600">
-                    </section>
-                    <section>
-                        <h4>An Adjoint Problem</h4>
-                        <img src="./images/omega/adjoint_problem.svg" height="600">
-                    </section>
-                    <section>
-                        <small>
-                        <p>The forward neutron transport equation:</p>
-                        \[
-                        \begin{multline}
-                        \hat\Omega \cdot \nabla \psi
-                                (\vec {r} ,E,\:\hat\Omega)+\Sigma _{ t }
-                                (\vec{r},E)\psi (\vec { r } ,E,\:\hat\Omega) = \\
-                                \int _{ 4\pi  } \int _{ 0 }^{ \infty  } \Sigma _{ s }(E'\rightarrow E,
-                                \hat\Omega'\rightarrow\hat\Omega)\psi (\vec { r } ,E',\: \hat\Omega')dE'
-                                \:d\hat\Omega' + q_{e}(\vec { r } ,E, \:\hat\Omega).
-                        \end{multline}
-                        \]
-                        <p>The adjoint neutron transport equation:</p>
-                        \[
-                        \begin{multline}
-                        \hat\Omega \cdot \nabla \color{teal}{\psi^{\dagger}}
-                                (\vec {r} ,E,\:\hat\Omega)+\Sigma _{ t }
-                                (\vec{r},E)\color{teal}{\psi^{\dagger}}  (\vec { r } ,E,\:\hat\Omega)
-                               = \\
-                               \int _{ 4\pi  } \int _{ 0 }^{ \infty  } \Sigma _{ s }(\color{violet}{E\rightarrow E'},
-                               \color{purple}{\hat\Omega\rightarrow\hat\Omega'})\color{teal}{\psi^{\dagger}}  (\vec { r } ,E',\:
-                               \hat\Omega')dE' \:d\hat\Omega' + \color{teal}{q_{e}^\dagger}(\vec { r } ,E,
-                                \:\hat\Omega).
-                        \end{multline}
-                        \]
-                        <p>The adjoint solution can be used to make an importance map for a desired outcome.</p>
-                        <p>An exact adjoint solution can be used to obtain a zero variance Monte Carlo solution.</p>
-                        </small>
-                    </section>
-                    <section>
-                        <h3>Importance and the Adjoint</h3>
-                        <small>
-                            <p align="left">Notation:</p>
-                            $\langle ab \rangle = \int a(P)b(P) dP$
-                            <p align="left">Detector response</p>
-                            $
-                            \begin{align}
-                            R &= \langle \sigma_d \psi \rangle \\
-                              &= \langle q^{\dagger} \psi \rangle \\
-                              &= \langle q \psi^{\dagger} \rangle \\
-                              \end{align}
-                            $
-                            <p align="left">Point source</p>
-                            $q ( \vec{r}, E, \hat{\Omega}) = \delta(\vec{r}-\vec{r_0})\delta(\vec{E}-\vec{E_0})\delta(\vec{\hat{\Omega}}-\vec{\hat{\Omega}_0})$
-                            <font color="purple"><p align="left">Response = adjoint flux</p>
-                            $R = \psi^{\dagger} (r_0, E_0, \Omega_0)$
-                            </font>
-                        </small>
-                    </section>
-                    <section>
-                        <h2>A Simple Labyrinth</h2>
-                        <div id="left">
-                            <img height="400" src="./images/omega/maze2geom.png">
-                        </div>
-                        <div id="right">
-                            <ul>
-                            <font size="4">
-                                <p><b>General:</b></p>
-                            <ul align="left">
-                            <li>Point source</li>
-                            <li>NaI detector, concrete barrier</li>
-                            <li>Vacuum boundary conditions</li>
-                            </ul>
-                            <p><b>Monte Carlo specific:</b></p>
-                            <ul>
-                            <li>NaI reaction rate with track length tally (f4)</li>
-                            <li>Tally energy binning consistent with XS library</li>
-                            </ul>
-                            <p><b>Denovo specific:</b></p>
-                            <ul>
-                            <li>27g19n XS library</li> 
-                            <li>QR quadrature</li> 
-                            <li>SC solver</li>
-                            <li>P$_N$ order 3</li>
-                            </ul>
-                            </font>
-                            </ul>
-                        </div>
-                    </section>
-                    <section>
-                        <h2></h2>
-                        <div id="left">
-                            <img height="400" src="./images/omega/maze2MfwdG00.png">
-                            <p align="center">Forward Flux</p>
-                        </div>
-                        <div id="right">
-                            <img height="400" src="./images/omega/maze2MadjG00.png">
-                            <p align="center">Adjoint Flux</p>
-                        </div>
-                    </section>
-                    <section>
-                        <img height="525" src="./images/omega/Hybrid_Codes.svg">
-                        <img class="fragment" style="position:absolute; left:2.5%" height="525" src="./images/omega/Hybrid1.svg">
-                        <img class="fragment" style="position:absolute; left:2.5%" height="525" src="./images/omega/Hybrid2.svg">
-                        <img class="fragment" style="position:absolute; left:2.5%" height="525" src="./images/omega/Hybrid3.svg">
-                        <img class="fragment" style="position:absolute; left:2.5%" height="525" src="./images/omega/Hybrid4.svg">
-                        <div id="bottom" align="left">
-                        <font size="2">
-                             <p>MCNP, X. Monte Carlo Team, MCNP–A General Purpose Monte Carlo N-Particle Transport Code, Version 5. LA-UR-03-1987, Los Alamos National Laboratory, April 2003.</p>
-                             <p>Evans, Thomas M., et al. "Denovo: A new three-dimensional parallel discrete ordinates code in SCALE." Nuclear technology 171.2 (2010): 171-200.</p>
-                             <p>Mosher, Scott W., et al. "ADVANTG—an automated variance reduction parameter generator." ORNL/TM-2013/416, Oak Ridge National Laboratory (2013).</p>
-                        </font></div>
-                    </section>
-				    <section data-background-image="./images/omega/maze2MadjG00.png" style="background: rgba(255, 255, 255, 0.80);">
-                        <h3>Angle Isn't Captured</h3>
-                    </section>
-                    <section>
-                        <h3>Explicit angle biasing is difficult</h3>
-                        <img class="fragment" height="500" src="./images/omega/Space3.svg">
-                        <img class="fragment" height="500" src="./images/omega/Energy3.svg">
-                        <img class="fragment" height="500" src="./images/omega/Angle3.svg">
-                    </section>
-                    <section>
-                        <h2>The $\Omega$ Flux</h2>
-                        \[
-                        \phi^{\dagger}_{\Omega}(\vec{r},E) = 
-                        \frac{\int{\psi (\vec{r}, E, \hat{\Omega}) \psi^{\dagger} (\vec{r}, E, \hat{\Omega})}d \hat{\Omega}}
-                        {\int{\psi (\vec{r}, E, \hat{\Omega}) d \hat{\Omega}}} 
-                        \]
-                        <ul>
-                            <li class="fragment">Uses angular flux <b>&#8594;</b><font color="green"> More angular information is captured in importance map</font></li>
-                            <li class="fragment">Generates scalar flux <b>&#8594;</b><font color="green"> Can be used in existing methods</font></li>
-                            <li class="fragment">Weights by the forward flux <b>&#8594;</b><font color="green"> Direction of particle flow is captured</font></li>
-                        </ul>
-                    </section>
-                    <section>
-                        <div id="left">
-                            <img height="400" src="./images/omega/maze2MadjG00.png">
-                            <p align="center">Adjoint Flux</p>
-                            <p align="center"><font size="5">Used by CADIS</font></p>
-                        </div>
-                        <div id="right">
-                            <img height="400" src="./images/omega/maze2MomegaG00.png">
-                            <p align="center">$\Omega$ Flux</p>
-                            <p align="center"><font size="5">Used by CADIS-$\Omega$</font></p>
-                        </div>
-                    </section>
-                    <section>
-                        <h2>Steel Beam in Concrete</h2>
-                        <div>
-                            <img height="500" src="./images/omega/prob1geom.png">
-                        </div>
-                    </section>
-                    <section>
-                        <h2>Steel Beam in Concrete</h2>
-                        <div>
-                            <img height="500" src="./images/omega/RE_prob1.png">
-                        </div>
-                    </section>
-                    <section>
-                            <img height="200" src="./images/omega/Prob1_FOM.png">
-                            <p style="margin-top:0; margin-bottom:0;"><font size="3" align="center"><b>Above:</b> Figure of Merit results for CADIS and CADIS-$\Omega$ for various tally regions of interest</font></p>
-                            <p style="margin-top:0; margin-bottom:0;"><font size="3" align="center"><b>Below:</b> Timing results for CADIS and CADIS-$\Omega$</font></p>
-                            <img height="250" src="./images/omega/Prob1_time.png">
-                    </section>
-                    <section data-transition="none">
-                            <img height="200" src="./images/omega/Prob1_FOM_highlight.png">
-                            <p style="margin-top:0; margin-bottom:0;"><font size="3" align="center"><b>Above:</b> Figure of Merit results for CADIS and CADIS-$\Omega$ for various tally regions of interest</font></p>
-                            <p style="margin-top:0; margin-bottom:0;"><font size="3" align="center"><b>Below:</b> Timing results for CADIS and CADIS-$\Omega$</font></p>
-                            <img height="250" src="./images/omega/Prob1_time_highlight.png">
-                    </section>
-                    <section>
-                        <h4>Flux Anisotropies</h4>
-                        <div>
-                            <img height="500" src="./images/omega/prob1M2G26.png">
-                            <p style="margin-top:0; margin-bottom:0;"><font size="3" align="center">Anisotropy Metric 2 ( $\phi^{\dagger}_{\Omega}/\phi^{\dagger}$ ) Distribution, Group 26 for Steel Beam in Concrete</font></p>
-                        </div>
-                    </section>
-                    <section>
-                        <div>
-                            <img height="275" style="margin-bottom:0" src="./images/omega/m4_violin.png">
-                            <p style="margin-top:0; margin-bottom:0;"><font size="3" align="center"><b>Above:</b> Anisotropy Metric 4 Distribution ( $\psi^{c}_{max:avg}/\psi^{\dagger}_{max:avg}$ ), by Energy Group, in Regions where the Contributon Flux is High</font></p>
-                            <p style="margin-top:0; margin-bottom:0;"><font size="3" align="center"><b>Below:</b> Trend Results for Anisotropy Metric 4 as Related to the Ratio of Relative Errors $RE_{\Omega}/RE_{CADIS}$</font></p>
-                            <img height="275" style="margin-top:0" src="./images/omega/m4_stats.png">
-                        </div>
-                    </section>
-                    <section>
-                        <h3>Key Takeaways from the $\Omega$-methods</h3>
-                        <div>
-                            <font size="6">
-                                <b>My work:</b> Created and implemented a novel method to capture angle in ADVANTG, developed novel methodology to analyze anisotropy in problems</br>
-                                <b>Result:</b> New insight into shield designs, robust characterization of method
-                            </font>
-                        </div>
-                        <footer align="left">
-                        <font size="2">
-                            <p>Munk, Madicken. FW/CADIS-Ω: An Angle-Informed Hybrid Method for Neutron Transport. Diss. UC Berkeley, 2017. </p>
-                            <p>Munk, Madicken, et al. "FW/CADIS-$\Omega $: An angle-informed hybrid method for deep-penetration radiation transport." arXiv preprint arXiv:1612.00793 (2016).</p>
-                            </font>
-                        </footer>
-                    </section>
-                    <section>
-                        <h3>Future Work</h3>
-                        <div id="right">
-                            <font size="5" align="left">
-                            <p><b>Idea:</b> Use anisotropy metrics to characterize beyond $\Omega$-methods</p>
-                            <p><b>Deliverable: </b> Robust scheme to recommend method based on problem type, open-source package to calculate anisotropy metrics, </p>
-                            <p><b>Collaborators:</b> ORNL, LANL</p>
-                            <p><b>Funding:</b> DOE-NE, NSF </p>
-                            </font>
-                        </div>
-                        <div id="left">
-                            <img src="./images/omega/futurestats.png" height="275">
-                        </div>
-                    </section>
-                    <section>
-                        <h3>Future Work</h3>
-                        <div>
-                            <font size="5" align="left">
-                            <p><b>Idea: </b> Build out suite of novel analysis tools for nuclear engineering with PyNE+yt, potentially serpent-tools</p>
-                            <p><b>Deliverable: </b> Packaged, documented, and tested suite of open source tools</p>
-                            <p><b>Collaborators:</b> DXL, GaTech</p>
-                            <p><b>Funding:</b> NSF, Moore-Sloan</p>
-                            </font>
-                        </div>
-                    </section>
-                </section>
-                <section data-transition="convex">
-                    <section>
-                        <img height="600" src="./images/general/System1e.svg">
-                    </section>
-                    <section>
-                        <h2>Moving Forward</h2>
-                        <ul>
-                        <li>Creating computational tools to design the next generation of nuclear technology</li>
-                        <li>Methods designed for applications</li>
-                        <li>Open, reproducible analysis</li>
-                        <li>Fast, interactive data visualization to assist with design</li>
-                        </ul>
-                    </section>
                 </section>
                 <section>
                     <section>
@@ -686,24 +164,8 @@
                     <ul>
                         <ul class="fragment">
                     <li>Matthew Turk</li>
-                    <li>Rachel Slaybaugh</li>
+                    <li>Katy Huff</li>
                          </ul>
-                        <ul class="fragment">
-                    <li>Tara Pandya</li>
-                    <li>Seth Johnson</li>
-                    <li>Steven Hamilton</li>
-                    <li>Garret Baltz</li>
-                    <li>David Krumwiede</li>
-                    <li>Nathan Goldbaum</li>
-                        </ul>
-                        <ul class="fragment">
-		            <li>Britton Smith</li>
-		            <li>Katy Huff</li>
-		            <li>Patricia Schuster</li>
-		            <li>Denia Djokic</li>
-		            <li>Lakshana Huddar</li>
-		            <li>Ehud Greenspan</li>
-                    </ul>
                     </ul>
                         </small>
                     </div>
@@ -713,90 +175,17 @@
                     <h4>Madicken Munk</h4>
                     <font size="5">twitter:@munkium &nbsp; &nbsp; &nbsp; &nbsp; github:@munkm
                     <br/>
-                    <a href="https://munkm.github.io/2019-04-15-UW">https://munkm.github.io/2019-04-15-UW</a>
+                    <a href="https://munkm.github.io/2019-09-25-NCSA">https://munkm.github.io/2019-09-25-NCSA</a>
                     <br/>
                     </font>
                     <font size="5"><b>This publication is supported in part by the 
                       Gordon and Betty Moore
                       Foundation's Data-Driven Discovery Initiative through Grant GBMF4561 to
-                      Matthew Turk and by the Department of Energy under award number
-                      DE-NE0008286 to Rachel Slaybaugh.</b></font>
+                      Matthew Turk</b></font>
                     </br>
                     <font size="4">
-                        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Tools for Transformation: Computational Methods and Modeling in Nuclear Engineering</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://munkm.github.io" property="cc:attributionName" rel="cc:attributionURL">Madicken Munk</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://munkm.github.io/2019-04-15-UW" rel="dct:source">http://munkm.github.io/2019-04-15-UW</a>.
+                        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Best Practices in Software Engineering for Scientific Computing</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://munkm.github.io" property="cc:attributionName" rel="cc:attributionURL">Madicken Munk</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://munkm.github.io/2019-09-25-NCSA" rel="dct:source">http://munkm.github.io/2019-09-25-NCSA</a>.
                     </font>
-                </section>
-                </section>
-                <section>
-                    <section>
-                        Backup Slides: Computing
-                    </section>
-                    <section data-background-iframe="https://discover-cookbook.numfocus.org" 
-                        data-background-interactive>
-                    </section>
-                    <section data-background-iframe="http://swcarpentry.github.io/git-novice/" 
-                        data-background-interactive>
-                    </section>
-                    <section data-background-iframe="https://jhepc.github.io/gallery.html" 
-                        data-background-interactive>
-                    </section>
-                </section>
-                <section>
-                    <section>Backup Slides: The $\Omega$ Methods</section>
-                    <section>
-                        <h3>The CADIS method</h3>
-                        <div id="left">
-                            <p>Biased source distribution</p>
-                            <p>Starting weight of the particles</p>
-                            <p>Weight window target values</p>
-                        </div>
-                        <div id="right">
-                            <font size="6">
-                            <p align="right">
-                            $\\ \hat{q}(\vec{r},E) = \frac{\phi^{\dagger}(\vec{r},E)q(\vec{r},E)}{R} \\$
-                            </p>
-                            <p></p>
-                            <p align="right">
-                            $\\ w_{0}(\vec{r},E) = \frac{q(\vec{r},E)}{\hat{q}(\vec{r},E)} = \frac{R}{\phi^{\dagger}(\vec{r},E)} \\$
-                            </p>
-                            <p></p>
-                            <p align="right">
-                            $\\ w(\vec{r},E) = \frac{R}{\phi^{\dagger}(\vec{r},E)}$
-                            </p>
-                            </font>
-                        </div>
-                    </section>
-                    <section>
-                        <h3>Anisotropy Metrics</h3>
-                        <div id="left">
-                            <font size=4>
-                            \begin{align}
-                            M_1 &= \frac{\phi^{c}}{\Phi^{c}} \\
-                            M_2 &= \frac{\phi^{\dagger}_{\Omega}}{\phi^{\dagger}} \\
-                            M_3 &= \frac{\psi^{c}_{Max}}{\psi^{c}_{Avg}} \\
-                            \end{align}
-                            </font>
-                        </div>
-                        <div id="right">
-                            <font size=4>
-                            \begin{align}
-                            M_4 &= \frac{\frac{\psi^{c}_{Max}}{\psi^{c}_{Avg}}}{\frac{\psi^{\dagger}_{Max}}{\psi^{\dagger}_{Avg}}} \\
-                            M_5 &= \frac{\psi^{c}_{Max}}{\psi^{c}_{Min}} \\
-                            M_6 &= \frac{\frac{\psi^{c}_{Max}}{\psi^{c}_{Min}}}{\frac{\psi^{\dagger}_{Max}}{\psi^{\dagger}_{Min}}}
-                            \end{align}
-                            </font>
-                        </div>
-                    </section>
-                    <section>
-                        <h3>Future Work</h3>
-                        <div>
-                            <font size="5" align="left">
-                            <p><b>Idea: </b> Use LDO quadrature set to do angle biasing in Monte Carlo</p>
-                            <p><b>Deliverable: </b> Angle biasing in Monte Carlo for low angular refinement </p>
-                            <p><b>Collaborators:</b> ORNL, UC Berkeley Neutronics </p>
-                            <p><b>Funding:</b> DOE-NE, ORNL subcontract</p>
-                            </font>
-                        </div>
                     </section>
                 </section>
 			</div>
