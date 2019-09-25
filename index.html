@@ -8,7 +8,7 @@
         <meta name="description" content="
         A one hour presentation on best practices for software development in scientific computing. 
         Given to the Blue Waters Fellows cohort of 2019/2020 at the National Center for 
-        Supercomputing Applications at the University of Illinois at Urbana Champagne, September 25,
+        Supercomputing Applications at the University of Illinois at Urbana Champaign, September 25,
         2019. 
         ">
         <meta name="author" content="Madicken Munk">
@@ -241,8 +241,9 @@
                                         <p class="fragment"><b 
                                           style="color:blue">Formats:</b> 
                                           Evaluated Nuclear Data File (ENDF), 
-                                          Evaluated Nuclear Structure Data File 
-                                          (ENSDF), Hierarchical Data Format 
+                                          GRIdded Binary (GRIB),
+                                          Flexible Image Transport System (FITS),
+                                          Hierarchical Data Format 
                                           (HDF), etc.</p>
                                           <p class="fragment" >
                                           <b style="color:blue">Management:</b> 
@@ -270,6 +271,9 @@
                                         <p class="fragment">
                                         <b style="color:blue">Version Control Systems:</b> 
                                         cvs, svn, hg, <b>git</b></p>
+                                        <p class="fragment"><b style="color:blue">Hint:</b> 
+                                        tools like git-annex or git-lfs can help you manage 
+                                        large data files</p>
                                         </section>
 					<section>
                                         <h2>Managing Changes</h2>
@@ -353,7 +357,8 @@
                                         <p class="fragment">
                                         <b style="color:blue">Hint:</b> 
                                         try a tutorial on BASH, CSH, Python, 
-                                        or Perl.</p>
+                                        or Perl, e.g. <a href="http://swcarpentry.github.io/shell-novice/">
+                                            the bash lesson by Software Carpentry</a>.</p>
                                         </section>
 					<section>
                                         <h2>Excecuting Workflows</h2>
@@ -375,6 +380,10 @@
                                         <b style="color:blue">Build System Tools:</b> 
                                         make, autoconf, automake, cmake, 
                                         docker, etc.</p>
+                                        <p class="fragment">
+                                        <b style="color:blue">Reference:</b> 
+                                        The Carpentries have an associated <a href="http://swcarpentry.github.io/make-novice/">
+                                            Automation and Make</a> lesson.</p>
                                         </section>
 
 					<section>
@@ -401,8 +410,8 @@
                                         queues, etc. In python, the power lies 
                                         in dictionaries and numpy arrays.</p>
                                         <p class="fragment"><b 
-                                                style="color:blue">Caveat:</b> 
-                                        Perhaps DataFrames.
+                                                style="color:blue">Addendum:</b> 
+                                        Perhaps DataFrames, xarray, 
                                         </p>
 
                                         </section>
@@ -475,7 +484,9 @@
                                         <p class="fragment"><b style="color:blue">Hint:</b> 
                                         <a href="https://google.github.io/styleguide/cppguide.html">
                                                 C++ Style Guide
-                                        </a>
+                                        </a>, 
+                                        <a href="https://black.readthedocs.io/en/stable/">Black code 
+                                            formatter for Python</a>
                                         </p>
                                         </section>
 
@@ -539,9 +550,9 @@
 
                                           <p class="fragment">
                                           <a 
-                                            href="https://raw.githubusercontent.com/katyhuff/ne255fall2014/gh-pages/images/ci.png" 
+                                            href="https://travis-ci.org/yt-project/yt/builds/589238668" 
                                             class="image"><img 
-                                            src="https://raw.githubusercontent.com/katyhuff/ne255fall2014/gh-pages/images/ci.png"></a>
+                                            src="./images/travis_yt.png"></a>
                                           </p>
 
                                         </section>
@@ -565,7 +576,7 @@
                                         <b style="color:blue">Tools:</b> 
                                         cpplint, pyflakes, 
                                         gdb, lldb, pdb, idb, valgrind, 
-                                        kernprof, kcachegrind</li>
+                                        kernprof, kcachegrind, cprofile/snakeviz</li>
                                         </p>
                                         </section>
 					<section>
@@ -623,9 +634,9 @@
                                         </ul>
                                           <p class="fragment">
                                           <a 
-                                            href="https://raw.githubusercontent.com/katyhuff/ne255fall2014/gh-pages/images/pr.png" 
+                                            href="https://github.com/yt-project/yt/pull/1760/files" 
                                             class="image"><img 
-                                            src="https://raw.githubusercontent.com/katyhuff/ne255fall2014/gh-pages/images/pr.png"></a>
+                                            src="./images/yt-PR.png"></a>
                                           </p>
 
                                         </section>
@@ -673,7 +684,7 @@
                                           <a 
                                             href="https://help.github.com/articles/about-issues" 
                                             class="image"><img 
-                                            src="https://raw.githubusercontent.com/katyhuff/ne255fall2014/gh-pages/images/issues.png"></a>
+                                            src="./images/yt-issues.png"></a>
                                           </p>
 
                                         </section>
@@ -702,8 +713,8 @@
                                         </p>
                                         <p class="fragment">
                                         <b style="color:blue">Tools:</b> 
-                                          sphinx, doxygen, gooletest, 
-                                          unitttest, nosetests 
+                                          sphinx, doxygen, googletest, 
+                                          unitttest, nosetests, pytest 
                                         </p>
 
 
@@ -796,7 +807,6 @@
 
                                         <section>
                                                 <h2>Unique Issue in Nuclear Engineering</h2>
-                                                <br/>
                                                 <p class="fragment">
                                                 Export control is serious.
                                                 <br/>
@@ -805,7 +815,7 @@
                                                 <p class="fragment">
                                                 <a
                                                   href="http://www.exportsolutionsinc.com/system/html/doe-export-control-requirements-46a39548.png"
-                                                  class="image"><img
+                                                  class="image"><img width="400"
                                                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Seal_of_the_United_States_Department_of_Energy.svg/1024px-Seal_of_the_United_States_Department_of_Energy.svg.png"
                                                   alt="Export Control is a big deal in nuclear"></a>
                                                 </p>
@@ -826,7 +836,8 @@
                                           <li class="fragment">
                                             <b style="color:green">Best:</b> 
                                             issue tracker, user/developer 
-                                              listhost(s), online 
+                                              listhost(s), communication channels, 
+                                              online 
                                             documentation</li> 
                                         </ul>
                                         </section>
@@ -847,10 +858,10 @@
                                           <li>Version Control: Github, Pro Git book</li>
                                           <li>Testing: nose, goolgetest</li>
                                           <li>Documentation: Sphinx, Doxygen</li>
-                                          <li><a href="http://python.berkeley.edu">
-                                          Python Worker's Party Listhost</a></li>
-                                          <li><a href="https://thehackerwithin.github.io/berkeley">
-                                          The Hacker Within Listhost</a></li>
+                                          <li>Python Meetups like <a href="https://www.meetup.com/Python-CU/members/83382012/">
+                                          Py-CU</a></li>
+                                          <li><a href="https://thehackerwithin.github.io/illinois">
+                                          The Hacker Within Illinois</a></li>
                                         <ul>
                                         </section>
                                         <section>
